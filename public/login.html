@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google fonts css -->
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+
+    <!-- Bootstrap google material designer -->
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+        integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+        crossorigin="anonymous"></script>
+    <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
+
+    <!-- css for login -->
+    <link rel="stylesheet" href="css/login.css">
+
+    <title>APD - HelpDesk</title>
+</head>
+
+<body>
+
+    <section class="center-align login-content">
+        <div class="container d-flex form-box shadow-lg bg-white">
+            <div class="center-align content-login ">
+                <div class="justify-content-center">
+                    <img class="center-align" id="image-login" src="../public/img/Login_Helpdesk.svg" alt="">
+                </div>
+                <div class="login-content">
+                    <form class="form-login">
+                        <section class="form-group input-login" data-validate="Utilizador">
+                            <label for="utilizador" class="bmd-label-floating">Utilizador</label>
+                            <input id="utilizador" class="form-control form-control-sm" type="email" name="username">
+                        </section>
+                        <section class="form-group input-login" data-validate="Enter password">
+                            <label for="password" class="bmd-label-floating">Password</label>
+                            <input id="password" class="form-control form-control-sm" type="password" name="password">
+                            <a class="" id="botao-login"><img src="img/arrow-right-circle-outline.svg" alt=""></a>
+                        </section>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

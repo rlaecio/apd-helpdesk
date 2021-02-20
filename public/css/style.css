@@ -1,0 +1,56 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 10.5em 52em 15em;
+    grid-template-rows: 0.2fr 2.3fr 0.5fr;
+    gap: 25px 23px;
+    grid-template-areas:
+      "menu pesquisa pesquisa"
+      "menu Task-list Formulario"
+      ". . .";
+  }
+  
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px 0px;
+    
+    grid-template-areas:
+      ". . ."
+      ". . .";
+    grid-area: menu;
+  }
+  
+  .pesquisa {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . ."
+      ". . .";
+    grid-area: pesquisa;
+  }
+  
+  .Task-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . ."
+      ". . .";
+    grid-area: Task-list;
+  }
+  
+  .Formulario {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . ."
+      ". . .";
+    grid-area: Formulario;
+  }
+  

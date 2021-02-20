@@ -1,0 +1,68 @@
+.form-box {
+  justify-content: center;
+  margin-top: 280px;
+  position: absolute;
+  width: 330px;
+  height: 209px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0 ;
+  box-sizing: border-box;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.content-login {
+  justify-content: center;
+  position: absolute;
+  width: 95%;
+}
+
+#image-login {
+  margin-top: 1.5rem;
+  margin-bottom: .5rem;
+  padding: 0rem;
+}
+
+.input-login {
+  display: flex;
+}
+
+input {
+  outline: none;
+  border: none;
+  color: #b5b8bf;
+  font-size: 14px;
+}
+
+#botao-login {
+  color: #e0e0e0;
+  width: 25px;
+  height: 25px;
+}
+
+.form-login {
+  flex-direction: column;
+  align-content: flex-start;
+  width: 85%;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.login-content {
+  display: flex;
+  justify-content: center;
+}
+
+/* bootstrap */
+.bmd-form-group {
+  padding-top: 1.3rem;
+}
+
+/* altera espaço entre as divs do bootstrap */
+.form-group {
+  margin-bottom: -7px;
+  line-height: 1em;
+}
