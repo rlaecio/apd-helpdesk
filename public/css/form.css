@@ -1,27 +1,39 @@
 .form-box {
-  justify-content: center;
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  width: 445px;
+  height: 718px;
   background: #ffffff;
   border: 1px solid #e0e0e0;
   box-sizing: border-box;
-  /* box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); */
   border-radius: 0.5rem;
-  /* text-align: center; */
-  padding: 0.8rem;
+  padding: 0px;
+  
+}
+.divisao-barra {
+    margin-top: .8rem;
+    margin-bottom: .8rem;
+}
+.col-02-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
 }
 
 .form-registo {
-  flex-direction: column;
-  align-content: flex-start;
-  /* width: 85%; */
+  align-items: center;
+  width: 387px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
+  margin: 0px;
+  margin-left: 0;
 }
 
 .input-form {
-  width: 100%;
   height: 19px;
   margin: 0;
   box-sizing: border-box;
@@ -33,14 +45,13 @@
 
 label {
   margin: 0;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 0.01em;
-  color: #6a707e;
+  color: #6A707E;
 }
 
 .btn-form-cadasto {
@@ -48,7 +59,6 @@ label {
   width: 120px;
   height: 22px;
   background: #f2f2f2;
-  /* opacity: 0.5; */
   border: 1px solid #e0e0e0;
   box-sizing: border-box;
   border-radius: 4px;
@@ -64,8 +74,30 @@ label {
 }
 
 .right-align {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap-reverse; 
-    justify-content: space-between;
+  display: inline;
+  justify-content:flex-end; 
+  float: right;
 }
+
+#btn-salvar{
+    margin-top: .8rem;
+}
+
+.textarea-registo {
+    width: 390px;
+    height: 100px !important;
+}
+
+.form-group {
+    margin-bottom: .6rem;
+}
+
+#historico, #marcacao {
+    display: inline;
+    position: relative; 
+}
+
+.caixa-form-text {
+    margin-top: -1rem;
+}
+

@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- google fonts css -->
     <link rel="stylesheet" href="css/libs/google-fonts.css">
 
@@ -28,54 +31,114 @@
 </head>
 
 <body>
-    <section class="form-box d-flex shadow-lg bg-white meuform">
+    <div class="form-box">
+
         <form class="form-registo">
-            <div class="form-group">
-                <label for="nome">Nome</label>
-                <input type="text" class="form-control form-control-sm input-form" id="nome" aria-describedby="nome">
+            <div class="form-row divisao-barra">
+                <img src="img/novo-registo.svg">
             </div>
-            <div class="form-group">
-                <label for="telefone">Telefone</label>
-                <input type="text" class="form-control form-control-sm input-form" id="telefone" aria-describedby="telefone">
+            <div class="form-row divisao-barra">
+                <img src="img/rectangle.svg">
             </div>
-            <div class="form-group">
-                <label for="outro-contato">Nome outro contato</label>
-                <input type="text" class="form-control form-control-sm input-form" id="outro-contato" aria-describedby="outro-contato">
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control form-control-sm input-form" id="nome"
+                        aria-describedby="nome">
+                </div>
             </div>
-            <div class="form-group">
-                <label for="fone-outro-contato">Telefone outro contato</label>
-                <input type="text" class="form-control form-control-sm input-form" id="fone-outro-contato" aria-describedby="fone-contato">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" class="form-control form-control-sm input-form" id="telefone"
+                        aria-describedby="telefone">
+                </div>
+            </div>
+            <div class="form-row">
+
+                <div class="form-group col-md-12">
+                    <label for="outro-contato">Nome outro contato</label>
+                    <input type="text" class="form-control form-control-sm input-form" id="outro-contato"
+                        aria-describedby="outro-contato">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="fone-outro-contato">Telefone outro contato</label>
+                    <input type="text" class="form-control form-control-sm input-form" id="fone-outro-contato"
+                        aria-describedby="fone-contato">
+                </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control form-control-sm input-form" id="inputEmail4" >
+                    <label for="inputEstado">Bairro</label>
+                    <select id="inputEstado" class="form-control input-form">
+                        <option selected>Escolher...</option>
+                        <option>...</option>
+                    </select>
                 </div>
-                <div class="form-group col-md-6">
-                    <label for="inputPassword4">Senha</label>
-                    <input type="password" class="form-control form-control-sm input-form" id="inputPassword4" >
-                </div>
-            </div>
-            
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputCity">Cidade</label>
-                    <input type="text" class="form-control form-control-sm input-form" id="inputCity">
-                </div>
-                
                 <div class="form-group col-md-2">
-                    <label for="inputCEP">CEP</label>
-                    <input type="text" class="form-control form-control-sm input-form" id="inputCEP">
+                    <label for="bloco">Bloco</label>
+                    <input type="text" class="form-control form-control-sm input-form" id="bloco">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="entrada">Entrada</label>
+                    <input type="text" class="form-control form-control-sm input-form" id="entrada">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="casa">Casa</label>
+                    <input type="text" class="form-control form-control-sm input-form" id="casa">
                 </div>
             </div>
-            <div class="right-align">
-                <button type="submit" class="btn-primary btn-form-cadasto">Salvar ></button>
+            <div class="form-row col-02-form">
+                <div class="form-group col-md-6">
+                    <label for="inputEstado">Tipo de Registo</label>
+                    <select id="inputEstado" class="form-control input-form">
+                        <option selected>Escolher...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div>
+                    <div class="form-group right-align col-md-6">
+                        <label for="historico">Historico</label>
+                        <button type="submit" class="btn" id="historico">
+                            <i class="fa fa-history" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group caixa-form-text">
+                <label for="observacoes">Observações</label>
+                <textarea class="form-control textarea-registo input-form" id="observacoes"></textarea>
+            </div>
+            <div class="form-row col-02-form">
+                <div class="form-group col-md-6">
+                    <label for="inputEstado">Estado</label>
+                    <select id="inputEstado" class="form-control input-form">
+                        <option selected>Escolher...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div>
+                    <div class="form-group right-align col-md-6">
+                        <label for="marcacao">Marcação</label>
+                        <button type="submit" class="btn" id="marcacao">
+                            <i class="fa fa-calendar-o " aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group caixa-form-text">
+                <label for="observacoes-estado">Observações ao estado</label>
+                <textarea class="form-control textarea-registo input-form" id="observacoes-estado"></textarea>
+                <div class="right-align">
+                    <button type="submit" class="btn-primary btn-form-cadasto" id="btn-salvar">Salvar ></button>
+                </div>
             </div>
         </form>
-    </section>
-        
-        
-    </body>
-    
-    </html>
+    </div>
+
+</body>
+
+</html>
