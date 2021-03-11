@@ -1,40 +1,30 @@
-.form-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;  
-  width: 445px;
-  height: 718px;
-  background: #ffffff;
-  border: 1px solid #e0e0e0;
-  box-sizing: border-box;
-  border-radius: 0.5rem;
-  padding: 0px;
-  
-}
-.divisao-barra {
-    margin-top: .8rem;
-    margin-bottom: .8rem;
-}
 .col-02-form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     
 }
+.icon-form{
+    position: absolute;
+    margin-left: 5px;
+    height: 19px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background: #f2f2f2;
+    opacity: 0.5;
+    /* border: 1px solid #e0e0e0; */
+    outline: none;
+    color: #6A707E;
+  }
 
-.form-registo {
-  align-items: center;
-  width: 387px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  margin: 0px;
-  margin-left: 0;
+.especial-input {
+    padding-left: 25px;
 }
 
+
 .input-form {
-  height: 19px;
+  height: 19px !important;
   margin: 0;
   box-sizing: border-box;
   background: #f2f2f2;
@@ -54,38 +44,8 @@ label {
   color: #6A707E;
 }
 
-.btn-form-cadasto {
-  position: unset;
-  width: 120px;
-  height: 22px;
-  background: #f2f2f2;
-  border: 1px solid #e0e0e0;
-  box-sizing: border-box;
-  border-radius: 4px;
-
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 11px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.01em;
-  color: #0e4d8d;
-}
-
-.right-align {
-  display: inline;
-  justify-content:flex-end; 
-  float: right;
-}
-
 #btn-salvar{
     margin-top: .8rem;
-}
-
-.textarea-registo {
-    width: 390px;
-    height: 100px !important;
 }
 
 .form-group {
@@ -97,7 +57,27 @@ label {
     position: relative; 
 }
 
-.caixa-form-text {
-    margin-top: -1rem;
+.box-form-text {
+    margin-top: -.5rem;
 }
 
+.form-cadasto {
+    position: absolute;
+    /* width: 440px; */
+    height: 725px;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: #ffffff;
+  }
+  
+  #observacoes-estado, 
+  #observacoes {
+    margin: 0;
+    box-sizing: border-box;
+    background: #f2f2f2;
+    opacity: 0.5;
+    border: 1px solid #e0e0e0;
+    outline: none;
+  }
+ 
